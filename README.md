@@ -1,4 +1,4 @@
-# FInPAth
+# FinPath
 
 **End-to-end real-time onboarding & activation analytics platform for a robo-advisory fintech application**
 
