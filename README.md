@@ -187,5 +187,3 @@ uvicorn main:app --reload
 | Docker setup | Planned |
 
 ---
-
-*Built as a portfolio project to demonstrate event-driven data engineering and product analytics at scale.*
