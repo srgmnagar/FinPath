@@ -4,10 +4,31 @@ import plotly.graph_objects as go
 
 st.set_page_config(page_title="Overview | FinPath", layout="wide")
 
+st.markdown("""
+    <style>
+        .block-container { padding-top: 1rem; padding-bottom: 1rem; }
+        [data-testid="stSidebar"] { min-width: 180px; max-width: 180px; }
+        /* fix metric text visibility */
+        [data-testid="stMetricLabel"] { color: #888 !important; font-size: 0.85rem; }
+        [data-testid="stMetricValue"] { color: #fff !important; font-size: 1.6rem; font-weight: 700; }
+        [data-testid="stMetricDelta"] { font-size: 0.8rem; }
+        [data-testid="stMetric"] {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            padding: 16px;
+            border: 1px solid #333;
+            margin-top: 7px;
+        }
+        hr {
+            margin: 5px 0 !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 df = pd.read_csv('data/funnel.csv')
 
 # ── Header ───────────────────────────────────────────────────
-st.title("📈 FinPath — Overview")
+st.title("FinPath — Overview")
 st.caption("End-to-end funnel performance across 250,000 simulated users (2024)")
 
 

@@ -130,6 +130,10 @@ st.markdown("""
             border-radius: 10px;
             padding: 16px;
             border: 1px solid #333;
+            margin-top: 7px;
+        }
+        hr {
+            margin: 5px 0 !important;
         }
     </style>
 """, unsafe_allow_html=True)
@@ -141,9 +145,9 @@ df_panic = pd.read_csv('data/panic_sell.csv')
 COLORS = {'high': '#43A047', 'medium': '#FB8C00', 'low': '#E53935'}
 
 # screen height for charts
-CHART_H = 380
+CHART_H = 280
 
-st.title("🧠 Behavior by Risk Profile")
+st.title("Behavior by Risk Profile")
 st.caption("How low, medium, and high risk users behave differently across deposits, investments, and engagement.")
 st.divider()
 
@@ -162,7 +166,7 @@ st.divider()
 col_l, col_r = st.columns(2, gap="large")
 
 with col_l:
-    st.subheader("💰 Deposit Distribution")
+    st.subheader("Deposit Distribution")
     fig_dep = go.Figure()
     for _, row in df_dep.iterrows():
         fig_dep.add_trace(go.Bar(
@@ -182,7 +186,7 @@ with col_l:
     st.plotly_chart(fig_dep, use_container_width=True)
 
 with col_r:
-    st.subheader("🤖 Auto-Invest Adoption")
+    st.subheader("Auto-Invest Adoption")
     fig_auto = go.Figure(go.Bar(
         x=df_dep['risk_profile'],
         y=df_dep['auto_invest_rate'],
@@ -205,7 +209,7 @@ st.divider()
 col_l2, col_r2 = st.columns(2, gap="large")
 
 with col_l2:
-    st.subheader("📈 Buy / Sell Ratio")
+    st.subheader("Buy / Sell Ratio")
     fig_bs = go.Figure(go.Bar(
         x=df_rb['risk_profile'],
         y=df_rb['buy_sell_ratio'],
@@ -223,7 +227,7 @@ with col_l2:
     st.plotly_chart(fig_bs, use_container_width=True)
 
 with col_r2:
-    st.subheader("😱 Panic Sell Rate")
+    st.subheader("Panic Sell Rate")
     fig_panic = go.Figure(go.Bar(
         x=df_panic['risk_profile'],
         y=df_panic['panic_sell_rate_pct'],
