@@ -208,3 +208,6 @@ __marimo__/
 
 #csv files
 dashboard/data/*.csv
+
+
+postgres/finpath_dump.dump
