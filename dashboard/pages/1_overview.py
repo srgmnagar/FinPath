@@ -24,7 +24,12 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+import os
 
+if not os.path.exists('data/funnel.csv'):
+    st.error("Data not found. Please run the Jupyter notebook first to generate CSVs.")
+    st.stop()
+    
 df = pd.read_csv('data/funnel.csv')
 
 # ── Header ───────────────────────────────────────────────────
