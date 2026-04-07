@@ -30,11 +30,13 @@ st.markdown("""
 
 import os
 
-if not os.path.exists('data/funnel.csv'):
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+if not os.path.exists(os.path.join(BASE_DIR, 'data/funnel.csv')):
     st.error("Data not found. Please run the Jupyter notebook first to generate CSVs.")
     st.stop()
 
-df = pd.read_csv('data/cohort_retention.csv')
+df = pd.read_csv(os.path.join(BASE_DIR, 'data/cohort_retention.csv'))
 
 st.title("Retention — Cohort Analysis")
 st.caption("Weekly retention rates across signup cohorts throughout 2024.")

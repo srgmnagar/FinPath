@@ -27,12 +27,14 @@ st.markdown("""
 
 import os
 
-if not os.path.exists('data/funnel.csv'):
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+if not os.path.exists(os.path.join(BASE_DIR, 'data/funnel.csv')):
     st.error("Data not found. Please run the Jupyter notebook first to generate CSVs.")
     st.stop()
 
-df_adopt = pd.read_csv('data/feature_adoption.csv')
-df_lift  = pd.read_csv('data/feature_lift.csv')
+df_adopt = pd.read_csv(os.path.join(BASE_DIR, 'data/feature_adoption.csv'))
+df_lift  = pd.read_csv(os.path.join(BASE_DIR, 'data/feature_lift.csv'))
 
 st.title("Feature Adoption & Retention Impact")
 st.caption("Which features are used most, and which ones correlate with deeper engagement.")
