@@ -1,0 +1,6 @@
+failure_reason,total_failures,retried,retry_success,retry_rate_pct,retry_success_rate_pct,overall_recovery_pct
+ocr_failure,1660,983,983,59.22,100.0,59.22
+address_mismatch,1612,961,961,59.62,100.0,59.62
+blurry_image,1605,934,934,58.19,100.0,58.19
+name_mismatch,1600,999,999,62.44,100.0,62.44
+expired_doc,1528,908,908,59.42,100.0,59.42

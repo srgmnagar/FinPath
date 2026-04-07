@@ -1,0 +1,4 @@
+risk_profile,users,avg_deposits_per_user,avg_deposit_amount_inr,avg_total_deposited_inr,avg_buys,avg_sells,buy_sell_ratio,avg_chart_views,auto_invest_rate,avg_goals,avg_sessions
+low,10937,1.81,1203.0,2190.0,0.94,0.93,1.01,2.78,0.24,0.43,10.87
+medium,13843,1.91,7130.0,13622.0,1.8,0.56,3.2,3.09,0.38,0.52,11.3
+high,7146,2.06,38783.0,79774.0,3.29,0.31,10.44,3.57,0.57,0.62,12.08

@@ -1,0 +1,4 @@
+device_type,total_users,signup_completed,signup_pct,email_verify_pct,onboarding_pct,risk_quiz_pct,kyc_pct,deposit_pct,portfolio_pct,end_to_end_pct
+web,37499,26327,70.21,85.17,89.8,41.98,88.95,64.4,95.5,12.33
+android,124906,87546,70.09,85.05,89.94,41.23,89.34,64.62,95.18,12.15
+ios,87595,61404,70.1,84.78,90.06,41.33,88.94,64.64,95.05,12.09

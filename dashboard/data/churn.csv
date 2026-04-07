@@ -1,0 +1,4 @@
+risk_profile,total_activated_users,hard_churned,soft_churned,portfolio_closed_only,healthy_users,hard_churn_pct,healthy_pct
+low,10937,709,315,336,9913,6.5,90.6
+medium,13843,496,202,496,13145,3.6,95.0
+high,7146,102,49,279,6995,1.4,97.9

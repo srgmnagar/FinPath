@@ -1,0 +1,2 @@
+avg_signup_to_email,avg_email_to_onboard,avg_onboard_to_quiz,avg_quiz_to_kyc,avg_kyc_to_deposit,avg_deposit_to_portfolio,med_signup_to_email,med_email_to_onboard,med_onboard_to_quiz,med_quiz_to_kyc,med_kyc_to_deposit,med_deposit_to_portfolio
+36.5,1.1,48.1,76.2,84.6,0.1,36.4,1.1,48.0,74.7,84.8,0.1

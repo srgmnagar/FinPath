@@ -1,0 +1,7 @@
+stage,started,finished,dropped_off,dropoff_pct
+onboarding → quiz,133994,55447,78547,58.6
+kyc → deposit,49426,31926,17500,35.4
+signup → email,175277,148947,26330,15.0
+quiz → kyc,55447,49426,6021,10.9
+email → onboarding,148947,133994,14953,10.0
+deposit → portfolio,31926,30388,1538,4.8
