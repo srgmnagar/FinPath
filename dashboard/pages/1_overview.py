@@ -26,7 +26,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 import os
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 if not os.path.exists(os.path.join(BASE_DIR, 'data/funnel.csv')):
     st.error("Data not found. Please run the Jupyter notebook first to generate CSVs.")
