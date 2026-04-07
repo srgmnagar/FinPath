@@ -53,11 +53,11 @@ Tracked adoption rates of key platform features (auto-invest, tax harvesting, re
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                     FinPath Pipeline                     │
-│                                                          │
+│                     FinPath Pipeline                    │
+│                                                         │
 │  ┌──────────────┐    ┌──────────────┐    ┌───────────┐  │
 │  │   Python     │    │  PostgreSQL  │    │  Jupyter  │  │
-│  │  Simulator   │───▶│   Database   │───▶│  Notebook │  │
+│  │  Simulator   │───▶│   Database   │──▶│ Notebook  │  │
 │  │              │    │              │    │           │  │
 │  │ 250K users   │    │ 5.1M events  │    │ 12 SQL    │  │
 │  │ 40 events    │    │ schema +     │    │ analyses  │  │
@@ -72,12 +72,12 @@ Tracked adoption rates of key platform features (auto-invest, tax harvesting, re
 │                      │  Funnel · Retention · Churn    │ │
 │                      │  Behaviour · Features          │ │
 │                      └────────────────────────────────┘ │
-│                                                          │
+│                                                         │
 │  ┌──────────────────────────────────────────────────┐   │
-│  │              FastAPI Backend (REST API)           │   │
-│  │         Serves data via /events, /users           │   │
+│  │              FastAPI Backend (REST API)          │   │
+│  │         Serves data via /events, /users          │   │
 │  └──────────────────────────────────────────────────┘   │
-│                                                          │
+│                                                         │
 │  Everything containerised with Docker Compose           │
 └─────────────────────────────────────────────────────────┘
 ```
